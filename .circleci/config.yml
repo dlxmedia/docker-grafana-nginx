@@ -1,0 +1,11 @@
+# https://circleci.com/orbs/registry/orb/circleci/docker
+version: 2.1
+orbs:
+  docker: circleci/docker@0.1.0
+workflows:
+  build_and_publish_docker_image:
+    jobs:
+      - docker/publish:
+          image: dlxmedia/docker-grafana-nginx
+          tag: latest
+          extra_build_args: '--build-arg GRAFANA_VERSION=latest'
