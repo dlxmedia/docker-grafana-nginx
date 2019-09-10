@@ -11,8 +11,8 @@ This nginx can also used for instance to block the external access to the Grafan
 
 # Running in local
 ```bash
-docker build . -t gal/nginx-grafana
-docker run -p 8080:8080 gal/nginx-grafana
+docker build . -t dlxmedia/docker-grafana-nginx
+docker run -p 8080:8080 dlxmedia/docker-grafana-nginx
 ```
 To verify if it is working, go to:
 
